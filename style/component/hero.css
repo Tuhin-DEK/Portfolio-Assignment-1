@@ -1,0 +1,126 @@
+.blank__dev {
+  margin-top: 90px;
+  height: 175px;
+  background-image: linear-gradient(to right, #17171a, #17171a00);
+  margin-left: 75px;
+  border: none;
+  border-top-left-radius: 75px;
+}
+.profile__photo {
+  position: relative;
+  top: -75px;
+  left: 20px;
+}
+.hero__info {
+  margin-right: 10px;
+  padding: 0 1rem;
+  line-break: normal;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.info__header {
+  text-transform: capitalize;
+  font-size: var(--size-xl);
+  letter-spacing: -0.25px;
+}
+.info__header-name {
+  color: var(--clr-orange);
+}
+.info__info {
+  color: var(--clr-gray);
+  font-size: var(--size-sm);
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+.portfolio-view {
+  gap: 1rem;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+}
+
+@media only screen and (min-width: 375px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .blank__dev {
+    padding: 0 0.5rem;
+  }
+  .about-me {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    position: relative;
+    top: 100px;
+  }
+  .blank__dev {
+    /* border: 1px solid red; */
+    position: inherit;
+    right: 30px;
+    display: flex;
+    align-items: end;
+    height: 200px;
+  }
+  .profile__photo {
+    /* width: 320px; */
+    height: 300px;
+    position: relative;
+    display: block;
+    left: -1px;
+    top: 1px;
+    bottom: 1px;
+
+    /* border: 1px solid red; */
+  }
+
+  .info__header {
+    font-size: var(--size-2xl);
+    letter-spacing: -0.3px;
+  }
+  .info__info {
+    font-size: var(--size-lg);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .info__header {
+    font-size: var(--size-3xl);
+  }
+  .info__info {
+    font-size: var(--size-xl);
+    letter-spacing: -0.5px;
+  }
+  .about-me {
+    gap: 2rem;
+  }
+  
+  .blank__dev {
+    height: 280px;
+    width: 700px;
+  }
+  .profile__photo {
+    /* width: 320px; */
+    height: 400px;
+    left: 50px;
+  }
+}

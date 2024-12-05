@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1px;
+    top: 100px;
+    font-size: 8px;
+    align-items: center;
+}
+.terms{
+    display: flex;
+
+}
+@media only screen and (min-width: 1024px) {  
+    footer{
+        position: relative;
+        top: 500px;
+    }
+}

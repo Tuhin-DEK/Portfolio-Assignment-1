@@ -1,0 +1,125 @@
+.recentwork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.info-info{
+    font-weight: 600;
+    color: var(--clr-gray);
+}
+.recentwork-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.recentwork-liberies{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+}
+.work__image1{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/www.w3schools.com_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.work__image2{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/vite.dev_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work__image3{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/remixicon.com_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work__image4{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/fontawesome.com_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work__image5{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/cdnjs.com_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work__image6{
+    min-width: 425px;
+    height: 250px;
+    background-color: bisque;
+    background-image: url(../../public/web.programming-hero.com_home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media only screen and (min-width: 375px) {
+    .info-header{
+        font-size: var(--size-lg);
+    }
+    .info-info{
+        font-size: var(--size-sm);
+        text-align: center;
+    }
+ }
+
+@media only screen and (min-width: 768px) { 
+    .info-header{
+        font-size: var(--size-xl);
+    }
+    .info-info{
+        font-size: var(--size-lg);
+        color: var(--clr-gray);
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1024px) {  
+    .recentwork{
+        position: relative;
+        top: 200px;
+    }
+    .recentwork-liberies{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .info-header{
+        font-size: var(--size-2xl);
+    }
+    .info-info{
+        font-size: var(--size-xl);
+    }
+}
+
+@media only screen and (min-width: 1200px) {  
+    .recentwork-liberies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .info-header{
+        font-size: var(--size-3xl);
+    }
+    .info-info{
+        font-size: var(--size-2xl);
+    }
+}
+
